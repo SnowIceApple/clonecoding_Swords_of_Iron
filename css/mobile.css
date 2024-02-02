@@ -1,0 +1,238 @@
+
+@media all and (max-width: 1580px){
+
+    .header{
+        padding: 0px;
+    }
+
+    .logo{
+        top: 62%;
+        left: 20px;
+    }
+
+    .scroll_over .logo{
+        top: 50%;
+    }
+
+    .header_top_area{
+        padding-right: 20px;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    .header_bot{
+        height: 70px;
+        align-items: center;
+    }
+
+    .mobile_menu_btn{
+        display: block;
+    }
+}
+
+@media all and (max-width: 1200px){
+
+    .container{
+        max-width: 940px;
+    }
+
+    .counter_box span{
+        font-size: 56px;
+    }
+
+    .idi_txt_box{
+        width: 940px;
+    }
+
+    .ft_info{
+        box-sizing: border-box;
+        padding-right: 22px;
+    }
+
+    .ft_social{
+        width: 31%;
+    }
+
+    #fts_subsc{
+        width: calc(100% - 60px);
+    }
+}
+
+@media all and (max-width: 1000px){
+
+    .container{
+        max-width: 720px;
+    }
+
+    .idi_txt_box{
+        width: 720px;
+    }
+
+    .main_title{
+        height: auto;
+        padding: 100px 0;
+    }
+    
+    .main_title h2{
+        line-height: 1.2;
+        width: 700px;
+        text-align: center;
+        font-size: 72px;
+    }
+
+    .main_intro_counter > ul{
+        justify-content: space-around;
+    }
+
+    .main_intro_counter > ul > li{
+        width: calc(33.3333% - 10px);
+        margin-bottom: 10px;
+    }
+
+    .main_section_title h2{
+        font-size: 28px;
+    }
+
+    .ft_inner{
+        overflow: hidden;
+        display: block;
+    }
+
+    .ft_info{
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .ft_list{
+        width: 50%;
+        float: left;
+        height: 170px;
+    }
+
+    .ft_social{
+        width: 50%;
+        float: left;
+    }
+}
+
+@media all and (max-width: 768px){
+
+    .container{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .main_title h2{
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+    .main_intro_counter > ul > li{
+        width: 50%;
+    }
+
+    .sit_rpt_list > ul > li{
+        width: 100%;
+    }
+
+    .sit_rpt_list.type2 > ul > li{
+        width: 100%;
+    }
+
+    .insights_list > ul > li{
+        width: 100%;
+    }
+
+    .insights_list > ul > li{
+        height: auto;
+    }
+
+    .insights_desc h3{
+        width: 100%;
+    }
+
+    .interview_video ul li{
+        width: 100%;
+        padding-top: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .iv_box{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sit_rpt_list.type2.type2_tit > ul > li{
+        width: 100%;
+    }
+
+    .qst_btn ul{
+        width: 100%;
+    }
+
+    .qst_btn ul li{
+        width: 100%;
+        margin: 0px !important;
+    }
+
+    .qst_btn ul li button{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .ft_info{
+        width: 100%;
+    }
+
+    .ft_list{
+        width: 100%;
+    }
+
+    .ft_social{
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 480px){
+
+    .logo{
+        top: 64%;
+    }
+
+    .header_top_area{
+        padding: 0 10px;
+    }
+
+    .header_top_area > div:first-child{
+        margin-left: 0px;
+    }
+
+    .hta_login a span{
+        display: none;
+    }
+
+    .logo a img{
+        width: auto;
+        height: 13vw;
+    }
+
+    
+
+}
+
+@media all and (max-width: 390px){
+    .hta_email{
+        width: calc(100% - 150px);
+    }
+
+    .main_intro_counter > ul > li{
+        width: 100%;
+    }
+}

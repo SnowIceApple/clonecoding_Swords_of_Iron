@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Swords of Iron Clone coding</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Poppins', sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">    
+    <!-- font-family: 'Rethink Sans', sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./img/main_logo.png" alt="logo">
+                    </a>
+                </h1>
+                <div class="header_top">
+                    <div class="header_top_area">
+                        <div class="hta_login hta_hv_ch">
+                            <a href="#">
+                                <ion-icon name="person"></ion-icon>
+                                <span class="font2 fc_wh">Login</span>
+                            </a>
+                        </div>
+                        <div class="hta_email">
+                            <input type="email" name="hta_email" id="hta_email" placeholder="Your email">
+                            <button></button>
+                        </div>
+                        <div class="hta_lang hta_hv_ch">
+                            <a href="#">
+                                <ion-icon name="globe-outline"></ion-icon>
+                                <span class="font2 fc_wh">HE</span>
+                            </a>
+                        </div>
+                        <div class="hta_search">
+                            <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+                            <div class="hta_search_popup_bg">
+                                <div class="htasp_close">
+                                    <button><ion-icon name="close-outline"></ion-icon></button>
+                                </div>
+                                <div class="hta_search_popup">
+                                    <div class="htasp_input">
+                                        <input type="search" name="htasp_input" id="htasp_input">
+                                        <span class="font2">Type and hit enter</span>
+                                    </div>
+                                    <div class="htas_condition">
+                                        <div class="condition_1">
+                                            <ul>
+                                                <li>
+                                                    <select name="cdt_1" id="cdt_1" class="font2">
+                                                        <option value="">Search by author</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <select name="cdt_2" id="cdt_2" class="font2">
+                                                        <option value="">Search by subject</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="condition_2">
+                                            <ul>
+                                                <li>
+                                                    <input type="text" id="from" placeholder="From" class="font2">
+                                                </li>
+                                                <li>
+                                                    <input type="text" id="to" placeholder="To" class="font2">
+                                                </li>
+                                                <li>
+                                                    <button class="font2">Search</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bot">
+                    <nav id="nav">
+                        <ul class="floor1">
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">Operation Swords of Iron</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Research</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">News articles</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Media</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">About Us</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Our Team</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Our Partners</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Newsletter</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">ICT in the Media</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Get Involved</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Contact Us</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">Activities</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Events</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Internships</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">ICTR</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">The Terrorist Podcast</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">(F)Acts of Terror Podcast</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Counter-Terrorism Today <br> Podcast</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">Publications</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">Desks</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Cyber Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Iran and Shi'ite Terrorism Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Jihadi Monitoring Group Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Palestnian Terrorist Organizations Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Global Far-right Extremism Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Terrorism and the Media Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Terror and Psychology Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">International Humanitarian Law Desk</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Resilience & Civilian Defence</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Chemical, Biological, Radiological, and Nuclear Desk</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">Courses and Training</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Academic Programs</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Advanced Certificate Program</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Online Course - Terrorism Actors, Strategies and Tactics</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Online Course - The Puzzle of Terrorism and Counter-Terrorism</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">World Summit</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">World Summit Program</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Past International Conferences</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font2 fc_wh">Our Services</span>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="floor2">
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">War Games & Simulations</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Courses & Training</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Threat Assessment & Risk Analysis</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Preventing Cyber Terrorism</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Counter-Terror Financing & Due Diligence</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Counter-Terrorism Legal Support</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="font2 fc_wh">Consulting</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile_menu_btn">
+                        <button>
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <section id="main_title">
+            <div class="main_title">
+                <h2 class="font1 fc_wh">Operation Swords of Iron</h2>
+            </div>
+        </section>
+        <section id="main_intro">
+            <div class="main_intro">
+                <div class="container">
+                    <div class="main_intro_counter">
+                        <ul>
+                            <li>
+                                <div class="counter_box">
+                                    <span id="counter_1"></span>
+                                    <span class="font2">+</span>
+                                </div>
+                                <div class="counter_desc">
+                                    <span class="font2 fc_gy">ROCKETS FIRED FROM GAZA</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter_box">
+                                    <span id="counter_2"></span>
+                                    <span class="font2">+</span>
+                                </div>
+                                <div class="counter_desc">
+                                    <span class="font2 fc_gy">KILLED</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter_box">
+                                    <span id="counter_3"></span>
+                                    <span class="font2">+</span>
+                                </div>
+                                <div class="counter_desc">
+                                    <span class="font2 fc_gy">INJURED</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter_box">
+                                    <span id="counter_4"></span>
+                                    <span class="font2">+</span>
+                                </div>
+                                <div class="counter_desc">
+                                    <span class="font2 fc_gy">HOSTAGES IN HAMAS CAPTIVITY</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter_box">
+                                    <span id="counter_5"></span>
+                                    <span class="font2">+</span>
+                                </div>
+                                <div class="counter_desc">
+                                    <span class="font2 fc_gy">HOSTAGES RELEASED</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main_intro_paragraph">
+                        <p class="font1 fc_bl_2">
+                            On 07 OCTOBER 2023, Hamas, the Palestinian terrorist group based in the Gaza Strip, began a devastating and coordinated attack that shook southern and central Israel. The attack began at approximately 0630 (UTC+03) when Hamas launched a massive rocket barrage targeting civilian areas. Simultaneously, the terrorists initiated infiltration operations, breaching the communities surrounding the Gaza Strip. This brazen assault led to violent confrontations with Israeli residents, law enforcement, and the Israel Defense Forces.
+                        </p>
+                    </div>
+                    <div class="main_intro_paragraph">
+                        <p class="font1 fc_bl_2">
+                            The consequences of this attack are ongoing. As of the most recent estimates, over <span class="num_bold">1,200</span> Israelis have lost their lives, and approximately <span class="num_bold">7,771</span> others have been wounded, marking one of the deadliest acts of terror in recent history. In addition to casualties, there were at least <span class="num_bold">242</span> hostages taken by the terror organization, <span class="num_bold">30</span> of whom were children. Since then, <span class="num_bold">114</span> hostages have been released, and <span class="num_bold">139</span> hostages are still in Hamas captivity. This shocking event has left a profound impact on the nation, with families mourning the loss of their loved ones and communities grappling with how to respond.
+                        </p>
+                    </div>
+                    <div class="main_intro_paragraph">
+                        <p class="font1 fc_bl_2">
+                            In response to these grave developments, the State of Israel officially declared war, the first time the state has done so since 1973. The military launched Operation Swords of Iron (Hebrew: מבצע חרבות ברזל). This military operation is aimed at countering the threat posed by the terrorist organization Hamas. It represents a decisive effort by Israel to safeguard the security and well-being of its citizens and to address the challenges posed by extremist elements in the region.
+                        </p>
+                    </div>
+                    <div class="main_intro_paragraph">
+                        <p class="font1 fc_bl_2">
+                            This page serves as a dedicated platform for comprehensive and up-to-date analysis of the situation. Our researchers and fellows provide insights, interviews, and live analysis of the unfolding events. We also offer access to previous articles on the topic, conference proceedings, and critical information about Hamas, the terror organization at the center of this crisis.
+                        </p>
+                    </div>
+                    <div class="main_intro_paragraph">
+                        <p class="font1 fc_bl_2">
+                            As the situation continues to evolve, we are committed to providing valuable and informed perspectives to help navigate through these challenging times.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="situational_reports">
+            <div class="situational_reports section_inner">
+                <div class="container">
+                    <div class="main_section_title">
+                        <h2 class="font3 fc_bl_2">Situational Reports</h2>
+                    </div>
+                    <div class="sit_rpt_list">
+                        <ul>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rp_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more_info_link">
+                        <a href="#" class="font2">All Situational Reports</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="research">
+            <div class="research section_inner">
+                <div class="container">
+                    <div class="main_section_title">
+                        <h2 class="font3 fc_bl_2">Research</h2>
+                    </div>
+                    <div class="sit_rpt_list type2">
+                        <ul>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rs_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <p class="font2 fc_gy">
+                                        The analysis discusses the strategic shift in the Middle East conflict, where Israel faces a multi-front war orchestrated by Iran through its regional proxies, highlighting the factors that could influence the expansion of the Gaza conflict into a wider regional war.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rs_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis of the online far-right’s response to the Israel-Hamas conflict.                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rs_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis of the surprise terror attack by Hamas from Gaza against Israel on 07 October 2023.                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rs_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <p class="font2 fc_gy">
+                                        This analysis focuses on the increased threats and calls for violence against Israelis and Jews globally, particularly in the context of the campaign in Gaza and Hamas’ actions.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rs_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis reviewing the sophisticated media campaign deployed by Hamas prior to and throughout this ongoing conflict.                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/rs_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis of the Anonymous Sudan pro-Islamic hacker group initiating a cryptocurrency donation campaign.                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more_info_link">
+                        <a href="#" class="font2">All Publications</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fellow_insights">
+            <div class="fellow_insights section_inner">
+                <div class="container">
+                    <div class="main_section_title">
+                        <h2 class="font3 fc_bl_2">Fellow Insights</h2>
+                    </div>
+                    <div class="insights_list">
+                        <ul>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/fi_img_1.png" alt="">
+                                <div class="insights_desc">
+                                    <h3 class="font1 fc_wh">Mr. Shalom Ben Hanan</h3>
+                                    <div class="read_more_type2">
+                                        <a href="#" class="font2 fc_wh">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="insights_desc_info">
+                                    <div class="idi_txt_box">
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">For the past four days, a brutal terrorist attack has been taking place in the State of Israel from the Gaza Strip, led by the terrorist organization Hamas. Many hundreds of terrorists penetrated the sovereignty of the State of Israel from land, sea, and air in an event the likes of which the State of Israel has not experienced since its founding. So far, hundreds have been killed, thousands injured, and a large number of abductees, including small children and the elderly.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2">Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit, explained:</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">“In one of the fighting centers, four terrorists took two hostages (an adult couple) in a house in the city of Ofakim. A long and protracted negotiation took place there, at the end of which the building was taken over. The terrorists were neutralized, and the hostages were rescued. Several fighters were injured in this daring action.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">The negotiations with the terrorists, which were conducted entirely in Arabic, in the Gaza dialect, and in a hostile environment, greatly helped to calm the situation and thus prevented possible harm to the hostages and, at the same time, created more favorable conditions for the rescue unit.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">On the face of it, it appears that the initial goal of the terrorists was a murderous killing spree and not a negotiation attack, but in practice, they entered a residence and, as mentioned, held the hostages for many hours. The main demands of the terrorists revolved around procedural issues (food, drink, medicine, etc.) and not around nationalist issues.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">This event emphasizes once again that hostage negotiation events “have not disappeared from the world,” and even if this is not the initial goal of the terrorists, it is possible that they will fall into it or choose to fall into it.</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 italic">We must continue to develop the practice models and protocols of what is called in the professional parlance “classic negotiation,” which includes elements from the worlds of psychology, crisis management, decision making, and more.”</p>
+                                        </div>
+                                        <div class="idi_paragraph">
+                                            <p class="fc_gy font2 bold">– Chief Superintendant (Ret.) Baruch Goldman, an ICT Fellow and former Commander of the Israeli Crisis Negotiation Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more_info_link">
+                        <a href="#" class="font2">All Insights</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="interviews">
+            <div class="interviews section_inner">
+                <div class="container">
+                    <div class="main_section_title">
+                        <h2 class="font3 fc_bl_2">Interviews</h2>
+                    </div>
+                    <div class="interview_video">
+                        <ul>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BxT7gXt6Sb8?si=t-mn_6OhEZdIN06M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sa-pvUiVP0M?si=dc40kgPQ4nfFyK5b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u2u8gaab21A?si=XzapdCXmQ2HEgS6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zD-cGd4j-CI?si=sJV7SJPEJ1gqfGYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BxT7gXt6Sb8?si=t-mn_6OhEZdIN06M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sa-pvUiVP0M?si=dc40kgPQ4nfFyK5b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u2u8gaab21A?si=XzapdCXmQ2HEgS6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iv_box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zD-cGd4j-CI?si=sJV7SJPEJ1gqfGYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more_info_link">
+                        <a href="#" class="font2">All Interviews</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news_articles">
+            <div class="news_articles section_inner">
+                <div class="container">
+                    <div class="main_section_title">
+                        <h2 class="font3 fc_bl_2">News Articles</h2>
+                    </div>
+                    <div class="sit_rpt_list type2 type2_tit">
+                        <ul>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/na_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <h3 class="font1 fc_ble">The useful idiots on American campuses – opinion</h3>
+                                    <p class="font2 fc_gy">
+                                        The analysis discusses the strategic shift in the Middle East conflict, where Israel faces a multi-front war orchestrated by Iran through its regional proxies, highlighting the factors that could influence the expansion of the Gaza conflict into a wider regional war.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/na_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <h3 class="font1 fc_ble">Israel Was Prepared for a Different War</h3>
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis of the online far-right’s response to the Israel-Hamas conflict.                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/na_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <h3 class="font1 fc_ble">Israel Must Destroy Hamas’s Tunnels</h3>
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis of the online far-right’s response to the Israel-Hamas conflict.                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="read_more_area">
+                                    <img src="./img/na_img_1.png" alt="">
+                                    <div class="rma_inner">
+                                        <div class="rma_link">
+                                            <a href="#" class="font2 fc_wh">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rma_txt_info">
+                                    <h3 class="font1 fc_ble">Twitter’s obligation during crisis and war – opinion</h3>
+                                    <p class="font2 fc_gy">
+                                        A preliminary analysis of the online far-right’s response to the Israel-Hamas conflict.                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more_info_link">
+                        <a href="#" class="font2">All News Articles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="questions">
+            <div class="questions section_inner">
+                <div class="container">
+                    <div class="main_section_title type2">
+                        <h2 class="font3 fc_bl_2">Commonly Asked Questions</h2>
+                    </div>
+                    <div class="question_tab">
+                        <div class="qst_btn">
+                            <ul>
+                                <li class="active">
+                                    <button class="font1">HAMAS</button>
+                                </li>
+                                <li>
+                                    <button class="font1">HEZBOLLAH</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="qst_box active">
+                            <ul class="qst_floor1">
+                                <li>
+                                    <button class="font1 fc_bl_2">What is Hamas and What are its goals?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas is a Palestinian hybrid terrorist organization founded in 1987. After the Israeli withdrawal from the Gaza Strip, Hamas took control as the governing authority. Its primary goals include the establishment of an independent Islamic state, resistance against the Israeli state, and the promotion of Islamic rule in the region.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">What is a "hybrid" terror organization?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">A hybrid terror organization is a terror organization that is comprised of more than one “wing.” These wings each operate under the guidance of a central governing body. While each “wing” may be differentiated by the type of activities that it engages in (e.g., political wing, military wing, social-welfare wing), all of the individual sections are subordinate to the terrorist organization leadership and support the terror activities of the organization.</p>
+                                        </li>
+                                        <li>
+                                            <p class="font1 fc_bl_2">Examples of hybrid terror organizations are <span class="num_bold">Hamas</span> and <span class="num_bold">Hezbollah.</span></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">How does Hamas differ from other Palestine groups?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas is distinct from other Palestinian groups like Fatah due to its Islamist ideology, social services network, and refusal to recognize Israel’s right to exist. This has led to Hamas’s continued attempts to destabilize the state and harm civilians.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">Why does Hamas use rocket attacks against Israel?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas employs rocket attacks as a means of resistance against the continued existence of the State of Israel. These attacks are often used to exert pressure on Israel, draw international attention, or seek concessions.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">Is Hamas a terrorist organization?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas is a terrorist organization. While the organization portray’s itself as having two separate wings, a military and political, the actions of the political wing are meant to support the activities of the military wing. As such, many states including Israel, the United States, Australia, Japan, the United Kingdom, and the European Union have designated it as a terrorist organization.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">What are the implications of Hamas being labeled a terrorist organization by some countries?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">The designation of Hamas as a terrorist organization by some countries restricts its ability to engage in international diplomacy and financial transactions. When some countries still do not fully designate the organization, it is able to continue operating and supporting its terror activities.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">How does Hamas govern the Gaza Strip, and what is life like under its rule?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas governs the Gaza Strip with its own institutions and enforces strict Islamic laws, creating a complex socio-political landscape. Life under its rule has been marked by significant challenges, including limited access to basic resources, economic hardships, and restrictions on personal freedoms. Armed groups within the territory also contribute to an environment of instability and insecurity. Gaza residents often struggle to access healthcare, education, and job opportunities, making life under Hamas governance particularly challenging.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="qst_box">
+                            <ul class="qst_floor1">
+                                <li>
+                                    <button class="font1 fc_bl_2">What is Hamas and What are its goals 2?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas is a Palestinian hybrid terrorist organization founded in 1987. After the Israeli withdrawal from the Gaza Strip, Hamas took control as the governing authority. Its primary goals include the establishment of an independent Islamic state, resistance against the Israeli state, and the promotion of Islamic rule in the region.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">What is a "hybrid" terror organization?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">A hybrid terror organization is a terror organization that is comprised of more than one “wing.” These wings each operate under the guidance of a central governing body. While each “wing” may be differentiated by the type of activities that it engages in (e.g., political wing, military wing, social-welfare wing), all of the individual sections are subordinate to the terrorist organization leadership and support the terror activities of the organization.</p>
+                                        </li>
+                                        <li>
+                                            <p class="font1 fc_bl_2">Examples of hybrid terror organizations are <span class="num_bold">Hamas</span> and <span class="num_bold">Hezbollah.</span></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">How does Hamas differ from other Palestine groups?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas is distinct from other Palestinian groups like Fatah due to its Islamist ideology, social services network, and refusal to recognize Israel’s right to exist. This has led to Hamas’s continued attempts to destabilize the state and harm civilians.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">Why does Hamas use rocket attacks against Israel?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas employs rocket attacks as a means of resistance against the continued existence of the State of Israel. These attacks are often used to exert pressure on Israel, draw international attention, or seek concessions.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">Is Hamas a terrorist organization?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas is a terrorist organization. While the organization portray’s itself as having two separate wings, a military and political, the actions of the political wing are meant to support the activities of the military wing. As such, many states including Israel, the United States, Australia, Japan, the United Kingdom, and the European Union have designated it as a terrorist organization.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">What are the implications of Hamas being labeled a terrorist organization by some countries?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">The designation of Hamas as a terrorist organization by some countries restricts its ability to engage in international diplomacy and financial transactions. When some countries still do not fully designate the organization, it is able to continue operating and supporting its terror activities.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="font1 fc_bl_2">How does Hamas govern the Gaza Strip, and what is life like under its rule?</button>
+                                    <ul class="qst_floor2">
+                                        <li>
+                                            <p class="font1 fc_bl_2">Hamas governs the Gaza Strip with its own institutions and enforces strict Islamic laws, creating a complex socio-political landscape. Life under its rule has been marked by significant challenges, including limited access to basic resources, economic hardships, and restrictions on personal freedoms. Armed groups within the territory also contribute to an environment of instability and insecurity. Gaza residents often struggle to access healthcare, education, and job opportunities, making life under Hamas governance particularly challenging.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer">
+                <div class="footer_top">
+                    <div class="container">
+                        <div class="ft_inner">
+                            <div class="ft_info">
+                                <h2 class="font1 fc_wh">International Institute for Counter-Terrorism (ICT)</h2>
+                                <div class="ft_address">
+                                    <address>
+                                        <p class="font2">Reichman University | P.O. Box 167 Herzliya 4610101</p>
+                                        <a href="#" clas="font2">ict@idc.ac.il</a>
+                                        <p class="font2">Tel. 972-9-9527277
+                                            <br>        
+                                            Fax. 972-9-9513073</p>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="ft_list">
+                                <ul>
+                                    <li><a href="#" class="font2">About Us</a></li>
+                                    <li><a href="#" class="font2">Get Involved</a></li>
+                                    <li><a href="#" class="font2">Our Services</a></li>
+                                    <li><a href="#" class="font2">Publications</a></li>
+                                </ul>
+                            </div>
+                            <div class="ft_list">
+                                <ul>
+                                    <li><a href="#" class="font2">Events</a></li>
+                                    <li><a href="#" class="font2">Word Summit</a></li>
+                                    <li><a href="#" class="font2">Courses & Training</a></li>
+                                </ul>
+                            </div>
+                            <div class="ft_social">
+                                <div class="fts_tit">
+                                    <strong class="font1 fc_wh">Follow Us</strong>
+                                </div>
+                                <div class="fts_sns">
+                                    <ul>
+                                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                    </ul>
+                                </div>
+                                <div class="fts_tit">
+                                    <strong class="font1 fc_wh">Subscribe</strong>
+                                </div>
+                                <div class="fts_subscribe">
+                                    <input type="email" name="fts_subsc" id="fts_subsc" placeholder="Your Email">
+                                    <button>Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bot">
+                    <div class="container">
+                        <div class="fb_inner">
+                            <p class="font2">© 2021 ICT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="mobile_nav">
+        <nav id="mob_nav">
+            <ul class="mob_floor1">
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">Operation Swords of Iron</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li><a href="#" class="font2">Research</a></li>
+                        <li><a href="#" class="font2">News Articles</a></li>
+                        <li><a href="#" class="font2">Media</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">About Us</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li>
+                            <a href="#"><span class="font2">Our Team</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Our Partners</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Newsletter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">ICT in the Media</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Get Involved</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Contact Us</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">Activities</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li>
+                            <a href="#"><span class="font2">Events</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Internships</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">ICTR</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">The Terrorist Podcast</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">(F)Acts of Terror Podcast</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Counter-Terrorism Today <br> Podcast</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">Publications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">Desks</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li>
+                            <a href="#"><span class="font2">Cyber Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Iran and Shi'ite Terrorism Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Jihadi Monitoring Group Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Palestnian Terrorist Organizations Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Global Far-right Extremism Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Terrorism and the Media Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Terror and Psychology Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">International Humanitarian Law Desk</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Resilience & Civilian Defence</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Chemical, Biological, Radiological, and Nuclear Desk</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">Courses and Training</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li>
+                            <a href="#"><span class="font2">Academic Programs</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Advanced Certificate Program</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Online Course - Terrorism Actors, Strategies and Tactics</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Online Course - The Puzzle of Terrorism and Counter-Terrorism</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">World Summit</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li>
+                            <a href="#"><span class="font2">World Summit Program</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Past International Conferences</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="font2 fc_wh">Our Services</span>
+                        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </a>
+                    <ul class="mob_floor2">
+                        <li>
+                            <a href="#"><span class="font2">War Games & Simulations</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Courses & Training</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Threat Assessment & Risk Analysis</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Preventing Cyber Terrorism</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Counter-Terror Financing & Due Diligence</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2">Counter-Terrorism Legal Support</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="font2 fc_wh">Consulting</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
