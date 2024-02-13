@@ -545,6 +545,18 @@ body.fixed_header{
     font-size: 38px;
 }
 
+.mobile_menu_btn button ion-icon:last-child{
+    display: none;
+}
+
+.mobile_menu_active .mobile_menu_btn button ion-icon:first-child{
+    display: none;
+}
+
+.mobile_menu_active .mobile_menu_btn button ion-icon:last-child{
+    display: block;
+}
+
 /* main_title */
 
 .main_title{
@@ -1236,7 +1248,7 @@ span.num_bold{
 
 .mobile_nav{
     position: fixed;
-    right: -100%;
+    right: -160vw;
     top: 0;
     width: 80vw;
     height: 100vh;
@@ -1247,7 +1259,7 @@ span.num_bold{
 }
 
 .mobile_menu_active .mobile_nav{
-    right: 0;
+    right: -80vw;
     opacity: 1;
 }
 
