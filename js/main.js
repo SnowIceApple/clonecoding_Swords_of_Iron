@@ -95,75 +95,76 @@ $(document).ready(function(){
         dateFormat: "yy-mm-dd",
       });
 
+
       var el = document.querySelector('#counter_1');
  
-    od = new Odometer({
-    el: el,
-    value: 0,
-    
-    // Any option (other than auto and selector) can be passed in here
-    format: '(,ddd)',
-    });
-    
-    od.update(9500)
-    // or
-    el.innerHTML = 9500
-
-    var el2 = document.querySelector('#counter_2');
- 
-    od2 = new Odometer({
-    el: el2,
-    value: 0,
-    
-    // Any option (other than auto and selector) can be passed in here
-    format: '(,ddd)',
-    });
-    
-    od2.update(1200)
-    // or
-    el2.innerHTML = 1200
-
-    var el3 = document.querySelector('#counter_3');
- 
-    od3 = new Odometer({
-    el: el3,
-    value: 0,
-    
-    // Any option (other than auto and selector) can be passed in here
-    format: '(,ddd)',
-    });
-    
-    od3.update(7771)
-    // or
-    el3.innerHTML = 7771
-
-    var el4 = document.querySelector('#counter_4');
- 
-    od4 = new Odometer({
-    el: el4,
-    value: 0,
-    
-    // Any option (other than auto and selector) can be passed in here
-    format: '(,ddd)',
-    });
-    
-    od4.update(139)
-    // or
-    el4.innerHTML = 139
-
-    var el5 = document.querySelector('#counter_5');
- 
-    od5 = new Odometer({
-    el: el5,
-    value: 0,
-    
-    // Any option (other than auto and selector) can be passed in here
-    format: '(,ddd)',
-    });
-    
-    od5.update(114)
-    // or
-    el5.innerHTML = 114
+      od = new Odometer({
+      el: el,
+      value: 0,
+      
+      // Any option (other than auto and selector) can be passed in here
+      format: '(,ddd)',
+      });
+      
+      od.update(9500)
+      // or
+      el.innerHTML = 9500
+     
+      var el2 = document.querySelector('#counter_2');
+     
+      od2 = new Odometer({
+      el: el2,
+      value: 0,
+      
+      // Any option (other than auto and selector) can be passed in here
+      format: '(,ddd)',
+      });
+      
+      od2.update(1200)
+      // or
+      el2.innerHTML = 1200
+     
+      var el3 = document.querySelector('#counter_3');
+     
+      od3 = new Odometer({
+      el: el3,
+      value: 0,
+      
+      // Any option (other than auto and selector) can be passed in here
+      format: '(,ddd)',
+      });
+      
+      od3.update(7771)
+      // or
+      el3.innerHTML = 7771
+     
+      var el4 = document.querySelector('#counter_4');
+     
+      od4 = new Odometer({
+      el: el4,
+      value: 0,
+      
+      // Any option (other than auto and selector) can be passed in here
+      format: '(,ddd)',
+      });
+      
+      od4.update(139)
+      // or
+      el4.innerHTML = 139
+     
+      var el5 = document.querySelector('#counter_5');
+     
+      od5 = new Odometer({
+      el: el5,
+      value: 0,
+      
+      // Any option (other than auto and selector) can be passed in here
+      format: '(,ddd)',
+      });
+      
+      od5.update(114)
+      // or
+      el5.innerHTML = 114
 
     
         
