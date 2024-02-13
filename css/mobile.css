@@ -154,6 +154,10 @@
         width: 100%;
     }
 
+    .idi_txt_box{
+        width: calc(100vw - 25px);
+    }
+
     .interview_video ul li{
         width: 100%;
         padding-top: 56.25%;
