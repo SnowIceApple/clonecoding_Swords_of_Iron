@@ -41,7 +41,9 @@ $(document).ready(function(){
     });
 
     $('.hta_search > a').on('click', function(){
-        $('#htasp_input').focus();
+      setTimeout(() => {
+        $('#htasp_input').focus(); 
+      }, 500);
         $('.hta_search_popup_bg').addClass('active');
     });
     $('.htasp_close button').on('click', function(e){
