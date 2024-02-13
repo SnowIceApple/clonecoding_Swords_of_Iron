@@ -341,6 +341,7 @@ body.fixed_header{
 .htas_condition{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     padding: 0 28px;
     justify-content: space-between;

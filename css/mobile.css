@@ -42,6 +42,43 @@
         font-size: 56px;
     }
 
+    .htasp_close{
+        top: 0;
+        right: 0;
+    }
+
+    .hta_search_popup{
+        width: calc(100% - 40px);
+    }
+
+    .htas_condition{
+        padding: 0;
+    }
+
+    .condition_1 ul li:first-child{
+        width: calc(40% - 12.5px);
+    }
+
+    .condition_1 ul li:last-child{
+        width: calc(60% - 12.5px);
+    }
+
+    .condition_2{
+        position: relative;
+        box-sizing: border-box;
+        padding-right: 165px;
+    }
+
+    .condition_2 ul li:not(:last-child){
+        width: calc(50% - 12.5px);
+    }
+
+    .condition_2 ul li:last-child{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     .idi_txt_box{
         width: 940px;
     }
@@ -132,6 +169,49 @@
 
     .main_intro_counter > ul > li{
         width: 50%;
+    }
+
+    .hta_search_popup{
+        margin-top: 0px;
+        top: 40%;
+    }
+
+    .htas_condition > div{
+        width: 100%;
+        height: auto;
+    }
+
+    .htas_condition > div ul{
+        flex-wrap: wrap;
+    }
+
+    .htas_condition > div ul li{
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .condition_1 ul li{
+        width: 100% !important;
+    }
+
+    .condition_2{
+        padding-right: 0px;
+        height: auto;
+    }
+
+    .condition_2 ul li:last-child{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .condition_2 ul li:not(:last-child){
+        width: calc(50% - 10px);
+    }
+
+    .condition_2 ul li:last-child button{
+        width: 300px;
     }
 
     .sit_rpt_list > ul > li{
